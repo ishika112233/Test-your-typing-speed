@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Source+Sans+Pro:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("https://media.istockphoto.com/id/958469944/photo/white-office-desk-table-with-computer-keyboard-mouse-and-cup-of-coffee-top-view-with-copy.jpg?s=170667a&w=0&k=20&c=fH3B9HVsxmPHQR4fTvykqxO-auFi0C5a9H4Qdr9f780=");
+}
+
+.wrapper{
+    background-color: rgb(19, 19, 19);
+    opacity: 0.7;
+    color: white;
+    width: 75vw;
+    height: 70vh;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.wrapper .content-box{
+    padding: 25px;
+}
+
+.wrapper .input-field{
+    width: 90%;
+    height: 70px;
+    margin-left: 55px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.content-box .typing-text{
+    max-height: 255px;
+    overflow-y: auto;
+}
+
+.typing-text::-webkit-scrollbar{
+    width: 0;
+}
+.typing-text p{
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+.typing-text p span.Correct{
+    color: rgb(53, 242, 53);
+}
+
+.typing-text p span.Incorrect{
+    color: rgb(200, 27, 27);
+    background-color: rgb(210, 135, 135);
+    outline: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.content-box .content{
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 12px 0px; 
+    border-top: 2px solid rgb(115, 92, 92);
+}
+
+.content .result-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.result-details li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.result-details li p{
+    font-size: 20px;
+}
+
+.result-details li span {
+    display: block;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+
+.content .button{
+    display: block;
+    margin: 50px 500px;
+    padding: 15px;
+    background-color: rgb(154, 171, 150);
+    color: rgb(15, 14, 14);
+    border: 2px solid green;
+    font-size: 20px;
+    font-weight: bold;
+    width: 120px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.content .button:active{
+    transform: scale(0.97);
+}
+
+.content .button:hover{
+    opacity: 0.8;
+}
